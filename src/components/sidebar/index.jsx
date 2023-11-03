@@ -20,11 +20,11 @@ export function SideBar({ toggle, opened }) {
   ));
   return (
     <Box
-    p="sm"
+      p="sm"
       style={{
         borderRadius: "20px",
         overflowY: "scroll",
-        height:"100%",
+        height: "100%",
         boxShadow: "0px 0px 10px 5px rgb(0,0,0,0.1)",
       }}
     >

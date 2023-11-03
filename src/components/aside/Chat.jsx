@@ -28,8 +28,12 @@ const Chat = () => {
           </Stack>
         </Flex>
         <Flex c="gray">
-          <PlusCircle />
-          <MoreVertical />
+          <ActionIcon variant="transparent" color="gray">
+            <PlusCircle />
+          </ActionIcon>
+          <ActionIcon variant="transparent" color="gray">
+            <MoreVertical />
+          </ActionIcon>
         </Flex>
       </Group>
       <Divider my="sm" />

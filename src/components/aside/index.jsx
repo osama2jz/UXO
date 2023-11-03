@@ -11,6 +11,7 @@ import {
   Clipboard,
   Home,
   Mail,
+  MapPin,
   MessageCircle,
   Phone,
   Pin,
@@ -25,7 +26,7 @@ import Chat from "./Chat";
 
 const Aside = () => {
   return (
-    <Stack gap={"xs"}>
+    <Stack gap={"xs"} h="100%">
       <Flex py="md" gap={"xs"}>
         <ActionIcon
           bg="#f3f3f3"
@@ -53,9 +54,9 @@ const Aside = () => {
             align={"center"}
             style={{ borderRadius: "10px" }}
           >
-            <Home color="#c1c6de"/>
-            <MessageCircle color="#c1c6de"/>
-            <User color="#c1c6de"/>
+            <Home color="#c1c6de" cursor={"pointer"} />
+            <MessageCircle color="#c1c6de" cursor={"pointer"} />
+            <User color="#c1c6de" cursor={"pointer"} />
           </Flex>
         </Container>
       </Flex>
@@ -76,7 +77,7 @@ const Aside = () => {
                   <Phone size={"12"} /> +01234567989
                 </Text>
                 <Text className={styles.info}>
-                  <Pin size={"12"} /> Paeso de la Castellana
+                  <MapPin size={"12"} /> Paeso de la Castellana
                 </Text>
               </Stack>
               <Box className={styles.date}>
@@ -181,7 +182,14 @@ const Aside = () => {
             <Avatar />
           </Flex>
         </Container>
-        <Container styles={{ height: "400px" }}>
+        <Container
+          styles={{
+            height: "400px",
+            // position: "absolute",
+            // bottom: 0,
+            // width: "98%",
+          }}
+        >
           <Chat />
         </Container>
       </Stack>
