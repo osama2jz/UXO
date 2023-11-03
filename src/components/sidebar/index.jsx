@@ -24,6 +24,7 @@ export function SideBar({ toggle, opened }) {
       style={{
         borderRadius: "20px",
         overflowY: "scroll",
+        height:"100%",
         boxShadow: "0px 0px 10px 5px rgb(0,0,0,0.1)",
       }}
     >
