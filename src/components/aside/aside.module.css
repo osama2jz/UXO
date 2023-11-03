@@ -1,0 +1,17 @@
+.date {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.3);
+}
+.info {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px !important;
+}
