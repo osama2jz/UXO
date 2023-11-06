@@ -4,6 +4,7 @@ import logo from "/logo.png";
 import { SideBar } from "../sidebar";
 import Header from "../header";
 import Aside from "../aside";
+import { Outlet } from "react-router-dom";
 const Layout = () => {
   const [opened, { toggle }] = useDisclosure();
 
@@ -25,17 +26,24 @@ const Layout = () => {
       >
         <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
       </AppShell.Header>
-      <AppShell.Aside style={{ border: "none", overflowY:'scroll' }} pr="sm" pb="md">
+      <AppShell.Aside
+        style={{ border: "none", overflowY: "scroll" }}
+        pr="sm"
+        pb="md"
+      >
         <Aside />
       </AppShell.Aside>
 
       <AppShell.Navbar p="md" style={{ border: "none" }}>
-        <Image src={logo} w={60} mb="md" />
+        <Image src={logo} w={70} mb="md" />
         <SideBar toggle={toggle} />
       </AppShell.Navbar>
 
       <AppShell.Main>
         <Header />
+        <Box my="md">
+          <Outlet />
+        </Box>
       </AppShell.Main>
     </AppShell>
   );

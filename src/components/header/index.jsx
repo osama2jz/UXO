@@ -1,22 +1,18 @@
-import { Box, Flex, Text } from "@mantine/core";
+import { Flex, Text } from "@mantine/core";
 import React from "react";
-import classes from "./header.module.css";
-
+import GrayButton from "../GrayButton";
+import Container from "../Container";
 const Header = () => {
   return (
-    <Flex
-      bg="#f3f3f3"
-      h="70px"
-      p="10px"
-      justify={"space-evenly"}
-      style={{ borderRadius: "10px" }}
-    >
-      <Text className={classes.tab}>Alta P. Beneficiaria</Text>
-      <Text className={classes.tab}>Cita Intervencion</Text>
-      <Text className={classes.tab}>Documentos Entidad</Text>
-      <Text className={classes.tab}>Reportes</Text>
-      <Text className={classes.tab}>Conecta</Text>
-    </Flex>
+    <Container>
+      <Flex p={0} m={0} justify={"space-evenly"}>
+        <GrayButton mih={45} h={45} label={"Alta P. Beneficiaria"} />
+        <GrayButton mih={45} h={45} label={"Cita Intervencion"} />
+        <GrayButton mih={45} h={45} label={"Documentos Entidad"} />
+        <GrayButton mih={45} h={45} label={"Reportes"} />
+        <GrayButton mih={45} h={45} label={"Conecta"} />
+      </Flex>
+    </Container>
   );
 };
 
