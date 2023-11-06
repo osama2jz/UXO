@@ -70,7 +70,7 @@ const LinksGroup = ({
           justify="space-between"
           spacing={0}
           px={"sm"}
-          py={8}
+          py={10}
           onClick={() => link && navigate(link)}
         >
           <Group align="center">

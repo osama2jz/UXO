@@ -105,6 +105,11 @@ export const SuperAdminSiderbarData = [
     link: routeNames.superAdmin.schedule,
   },
   {
+    label: "UXO Connect",
+    icon: Calendar,
+    link: routeNames.superAdmin.connect,
+  },
+  {
     label: "Appointments",
     icon: Calendar,
     links: [

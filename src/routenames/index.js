@@ -31,6 +31,7 @@ const routeNames = {
     viewAppoinment: "/view-appointment",
     editAppoinment: "/edit-appointment",
     schedule: "/schedule",
+    connect: "/connect",
   },
 };
 
