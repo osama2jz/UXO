@@ -41,7 +41,7 @@ const Layout = () => {
 
       <AppShell.Main>
         <Header />
-        <Box my="md">
+        <Box my="md" >
           <Outlet />
         </Box>
       </AppShell.Main>

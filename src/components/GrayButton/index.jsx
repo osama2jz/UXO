@@ -7,9 +7,10 @@ const GrayButton = ({ label, fullWidth, ...props }) => {
     <UnstyledButton
       className={classes.tab}
       mih={"50px"}
-      {...props}
       fw="500"
       w={fullWidth && "100%"}
+      ta='center'
+      {...props}
     >
       {label}
     </UnstyledButton>

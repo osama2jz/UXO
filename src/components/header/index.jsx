@@ -5,12 +5,18 @@ import Container from "../Container";
 const Header = () => {
   return (
     <Container>
-      <Flex p={0} m={0} justify={"space-evenly"}>
-        <GrayButton mih={45} h={45} label={"Alta P. Beneficiaria"} />
-        <GrayButton mih={45} h={45} label={"Cita Intervencion"} />
-        <GrayButton mih={45} h={45} label={"Documentos Entidad"} />
-        <GrayButton mih={45} h={45} label={"Reportes"} />
-        <GrayButton mih={45} h={45} label={"Conecta"} />
+      <Flex
+        p={0}
+        m={0}
+        justify={"space-evenly"}
+        gap="md"
+        // wrap={'wrap'}
+      >
+        <GrayButton mih={45} h={45} fz="sm" label={"Alta P. Beneficiaria"} />
+        <GrayButton mih={45} h={45} fz="sm" label={"Cita Intervencion"} />
+        <GrayButton mih={45} h={45} fz="sm" label={"Documentos Entidad"} />
+        <GrayButton mih={45} h={45} fz="sm" label={"Reportes"} />
+        <GrayButton mih={45} h={45} fz="sm" label={"Conecta"} />
       </Flex>
     </Container>
   );
